@@ -3,6 +3,7 @@ import FlowerSides from "./components/flower-sides";
 import LandingPage from "./pages/landing-page";
 import PromptsPage from "./pages/prompts-page";
 import RecordarPage from "./pages/recordar-page";
+import SuccessPage from "./pages/success-page";
 import "./App.css";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/prompts" element={<PromptsPage />} />
+          <Route path="/success" element={<SuccessPage />} />
           <Route path="/recordar" element={<RecordarPage />} />
           <Route path="*" element={<LandingPage />} />
         </Routes>
