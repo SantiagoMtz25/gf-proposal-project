@@ -41,7 +41,7 @@ const PromptsPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="relative z-30 h-screen flex flex-col justify-center items-center mx-3 md:mx-0">
       {isLastMessage && hideButtons ? (
         <motion.div
           key="note"
@@ -89,7 +89,7 @@ const PromptsPage = () => {
             {!hideButtons && (
               <motion.p
                 key="counter"
-                className="text-sm uppercase tracking-[0.3em] text-slate-400"
+                className="text-md uppercase tracking-[0.3em] text-slate-500"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
@@ -140,7 +140,7 @@ const PromptsPage = () => {
                 </button>
 
                 <button
-                  className="rounded-2xl bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+                  className="rounded-2xl bg-slate-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
                   type="button"
                   onClick={goBackHome}
                 >

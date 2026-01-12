@@ -38,18 +38,9 @@ const RecordarPage = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-lg text-center flex flex-col gap-6 px-6">
-      <motion.h2
-        className="text-3xl sm:text-4xl font-semibold text-slate-800"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-      >
-        Recordar
-      </motion.h2>
-
+    <div className="relative z-30 w-full max-w-lg text-center flex flex-col gap-6 px-6 mx-3 md:mx-0">
       <motion.p
-        className="text-base sm:text-lg text-slate-600"
+        className="text-2xl text-slate-700"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.2 }}
@@ -74,10 +65,11 @@ const RecordarPage = () => {
         transition={{ duration: 0.5, delay: 1.8 }}
       >
         <button
-          className="rounded-2xl border border-slate-400 px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
+          className="rounded-2xl bg-slate-500 px-6 py-3 text-2xl font-medium text-white transition hover:bg-slate-800"
+          type="button"
           onClick={() => navigate("/")}
         >
-          Volver al inicio
+          Volver
         </button>
       </motion.div>
     </div>
