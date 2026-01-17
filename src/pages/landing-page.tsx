@@ -22,7 +22,7 @@ const LandingPage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
       >
-        De corazón espero que este pequeño detalle te gusté y recuerdes siempre lo
+        De corazón espero que este pequeño detalle te guste y recuerdes siempre lo
         especial e increíble que eres
       </motion.p>
 
